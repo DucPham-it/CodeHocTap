@@ -1,0 +1,3 @@
+Yêu cầu chung: Chỉ dùng kiến thức tại tuần 2 Input and Output
+    1.Hãy vẽ một tam giác cân thông qua thư viện iomanip.
+    2.Cho độ dài 3 cạnh của tam giác là a,b,c (với a,b,c nhập từ bàn phím) hãy tính diện tích của tam giác.
