@@ -6,5 +6,6 @@ int main(){
     char outputPath[]="OUTPUT.TXT";
     loadChar(inputPath, arr);
     saveChar(outputPath, arr);
+    cout << "Done" << endl;
     return 0;
 }

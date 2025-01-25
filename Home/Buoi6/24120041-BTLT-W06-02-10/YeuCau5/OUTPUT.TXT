@@ -1,2 +1,2 @@
-Word count: 3
-Number count: 2
+Word count: 6
+Number count: 5
