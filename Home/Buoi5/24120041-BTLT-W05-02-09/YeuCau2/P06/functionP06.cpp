@@ -31,5 +31,5 @@ string Rank(double GPA){
 void Output(Student Num){
     double mind=GPA(Num.Literature,Num.Math);
     cout<<"GPA: "<<mind<<endl;
-    cout<<"Rank: "<<Rank(mind);
+    cout<<"Rank: "<<Rank(mind)<<endl;
 }

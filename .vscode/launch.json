@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "/workspaces/CodeHocTap/Home/Buoi5/24120041-BTLT-W05-02-09/YeuCau2/P06",
+      "program": "/workspaces/CodeHocTap/Home/Buoi5/24120041-BTLT-W05-02-09/YeuCau2/P06/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
