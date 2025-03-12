@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/CodeHocTap/LiThuyet/Week2",
-      "program": "/workspaces/CodeHocTap/LiThuyet/Week2/build/Debug/outDebug",
+      "cwd": "/workspaces/CodeHocTap/ThucHanh/AtHome/W1/Recur_Exercise_5",
+      "program": "/workspaces/CodeHocTap/ThucHanh/AtHome/W1/Recur_Exercise_5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

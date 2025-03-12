@@ -84,6 +84,6 @@ bool readMatrix(const char *filename, int **&matrix, int &rows, int &cols)
 }
 int main(int argc, char const *argv[])
 {
-    /* code */
+    
     return 0;
 }

@@ -11,16 +11,15 @@
 // ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠙⣿⣿⣿⣶⣶⣿⣯⣿⣿⣿⣆⠀⠇
 // TRY TO FIX BUG TODAY, BECOME A NICE CODER TOMORROW !!!
 
+
+//24120041 - Pham Vo Duc
+
 #include <iostream>
 using namespace std;
 
-void BuddleSort(int a[], int n){
-    for (int i = 0; i < n-1; i++){
-        for (int j = n-1; j > i; j--){
-            if (a[j] < a[j-1])
-                swap(a[j], a[j-1]);
-        }
-    }
+int sumArray(int a[], int n){
+    if (n <= 0) return 0;
+    return a[n-1] + sumArray(a, n-1);
 }
 
 int main(int argc, char const *argv[])
@@ -31,9 +30,6 @@ int main(int argc, char const *argv[])
     for (int i=0; i < n; i++){
         cin >> a[i];
     }
-
-    for (int i=0; i < n; i++){
-        cout << a[i] << " ";
-    }
+    cout << sumArray(a,n);
     return 0;
 }
