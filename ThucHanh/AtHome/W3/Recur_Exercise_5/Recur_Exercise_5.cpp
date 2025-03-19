@@ -17,19 +17,25 @@
 #include <iostream>
 using namespace std;
 
-int sumArray(int a[], int n){
-    if (n <= 0) return 0;
-    return a[n-1] + sumArray(a, n-1);
+void towerOfHanoi(int n, char source, char auxiliary, char destination){
+    if ( n == 1) {
+        cout << " Move disk " << n << " from rod " << source << " to rod " << destination << endl;
+        return;
+    }
+    towerOfHanoi(n-1, source, destination, auxiliary);
+    cout << " Move disk " << n << " from rod " << source << " to rod " << destination << endl;
+    towerOfHanoi(n-1, auxiliary, destination, source);
+
 }
+
 
 int main(int argc, char const *argv[])
 {
     int n;
     cin >> n;
-    int a[n];
-    for (int i=0; i < n; i++){
-        cin >> a[i];
-    }
-    cout << sumArray(a,n);
+    char A = 'A';
+    char B = 'B';
+    char C = 'C';
+    towerOfHanoi(n, A, B, C);
     return 0;
 }
