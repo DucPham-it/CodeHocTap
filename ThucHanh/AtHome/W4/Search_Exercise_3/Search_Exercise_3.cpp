@@ -17,8 +17,8 @@
 using namespace std;
 
 struct SearchStats {
-    int comparisons ;
     int index;
+    int comparisons ;
 };
 
 typedef struct SearchStats SearchStats;
