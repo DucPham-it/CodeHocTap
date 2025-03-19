@@ -39,7 +39,7 @@ SearchStats standardBinarySearch(int arr[], int n, int x)
         comparisons++;
         int mid = left + (right - left) / 2;
         if (arr[mid] == x) {
-            return {mid};
+            return {mid, comparisons};
         }
         if (arr[mid] < x) {
             left = mid + 1;
