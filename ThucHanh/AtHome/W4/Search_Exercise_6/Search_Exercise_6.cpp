@@ -11,10 +11,9 @@
 // ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠙⣿⣿⣿⣶⣶⣿⣯⣿⣿⣿⣆⠀⠇
 // TRY TO FIX BUG TODAY, BECOME A NICE CODER TOMORROW !!!
 
-
 //24120041 - Pham Vo Duc
 
-#include <iostream> 
+#include <iostream>
 #include <cmath>
 using namespace std;
 
@@ -30,36 +29,20 @@ ostream & operator << (ostream & output, const SearchStats & searchStats) {
     return output;
 }
 
-SearchStats ternarySearch(int arr[], int left, int right, int x) {
+SearchStats LinearSearch(int arr[], int n, int x) 
+{   
     int comparisons = 0;
-
-    while (left <= right) {
-        int mid1 = left + (right - left) / 3;
-        int mid2 = right - (right - left) / 3;
-        
-        comparisons++; 
-        if (arr[mid1] == x) return {mid1, comparisons};
-
-        comparisons++;  
-        if (arr[mid2] == x) return {mid2, comparisons};
-
-        comparisons++;  
-        if (x < arr[mid1]) {
-            right = mid1 - 1;
-        } else {
-            comparisons++; 
-            if (x > arr[mid2]) {
-                left = mid2 + 1;
-            } else {
-                left = mid1 + 1;
-                right = mid2 - 1;
-            }
+    for (int i = 0; i < n; i++) {   
+        comparisons++;    
+        if (arr[i] == x) {
+            return {i, comparisons}; 
         }
+        
     }
-    return {-1, comparisons};
+    return {-1, comparisons}; 
 }
 
-SearchStats BinarySearch(int arr[], int n, int x) 
+SearchStats binarySearch(int arr[], int n, int x) 
 {
     int comparisons = 0;
     int left = 0;
@@ -79,6 +62,32 @@ SearchStats BinarySearch(int arr[], int n, int x)
     return {-1, comparisons};
 }
 
+SearchStats jumpSearch(int arr[], int n, int x) {
+    int comparisons = 0;
+    int step = sqrt(n);
+    int prev = 0;
+    while (arr[min(step, n) - 1] < x) {
+        comparisons++;
+        prev = step;
+        step += sqrt(n);
+        if (prev >= n) {
+            return {-1, comparisons};
+        }
+    }
+    while (arr[prev] < x) {
+        comparisons++;
+        prev++;
+        if (prev == min(step, n)) {
+            return {-1, comparisons};
+        }
+    }
+    comparisons++;
+    if (arr[prev] == x) {
+        return {prev, comparisons};
+    }
+    return {-1, comparisons};
+}
+
 int main()
 {
     int n, q;
@@ -91,8 +100,9 @@ int main()
         cout << endl;
         int x;
         cin >> x;
-        cout << "Binary Search : " << BinarySearch(arr, n, x) << endl;
-        cout << "Ternary Search : " << ternarySearch(arr, 0, n - 1, x) << endl;
+        cout << "Linear Search : " << LinearSearch(arr, n, x) << endl;
+        cout << "Binary Search : " << binarySearch(arr, n, x) << endl;
+        cout << "Jump Search : " << jumpSearch(arr, n, x) << endl;
         cout << endl;
     }
 

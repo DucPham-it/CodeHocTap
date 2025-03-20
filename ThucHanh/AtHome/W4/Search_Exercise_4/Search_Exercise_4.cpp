@@ -35,9 +35,9 @@ SearchStats standardBinarySearch(int arr[], int n, int x)
     int comparisons = 0;
     int left = 0;
     int right = n - 1;
-    while (left <= right) {
-        comparisons++;
+    while (left <= right) {       
         int mid = left + (right - left) / 2;
+        comparisons++;
         if (arr[mid] == x) {
             return {mid, comparisons};
         }
@@ -50,23 +50,22 @@ SearchStats standardBinarySearch(int arr[], int n, int x)
     return {-1, comparisons};
 }
 
-SearchStats metaBinarySearch(int arr[], int n, int x)
-{
+SearchStats metaBinarySearch(int arr[], int n, int x) {
     int comparisons = 0;
-    int low = 0;sentinelLinearSearch
-    int step = pow(2, floor(log2(n))); 
+    int low = 0;
+    int step = 1 << (31 - __builtin_clz(n)); // 2^(floor(log2(n)))
 
     while (step > 0) {
         comparisons++;
-        if (low + step < n && arr[low + step] <= x) {
+        if (low + step < n && arr[low + step] <= x)
             low += step;
-        }
-        step /= 2; 
+        step >>= 1;
     }
-    
-    if (arr[low] == key)
-        return {low, comparisions};
-    retrun {-1, comparisions};
+    comparisons++;
+    if (arr[low] == x) {
+        return {low, comparisons};
+    }
+    return {-1, comparisons};    
 }
 
 int main()
@@ -82,7 +81,7 @@ int main()
         int x;
         cin >> x;
         cout << "Standard Binary Search : " << standardBinarySearch(arr, n, x) << endl;
-        cout << "Meta Binaryx Search : " << metaBinarySearch(arr, n, x) << endl;
+        cout << "Meta Binary Search : " << metaBinarySearch(arr, n, x) << endl;
         cout << endl;
     }
 
