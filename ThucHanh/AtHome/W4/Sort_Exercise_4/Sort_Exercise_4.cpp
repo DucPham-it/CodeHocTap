@@ -63,3 +63,17 @@ void merge ( int arr1 [] , int n1 , int arr2 [] , int n2 , int result []) {
         k++;
     }
 }
+
+template <typename Func , typename ... Args >
+3 double measureExecutionTime ( Func func , Args &&... args ) {
+4 auto start = std :: chrono :: high_resolution_clock :: now () ;
+5
+6 func ( std :: forward < Args >( args ) ...) ;
+7
+8 auto end = std :: chrono :: high_resolution_clock :: now () ;
+9
+10 auto duration =
+11 std :: chrono :: duration_cast < std :: chrono :: microseconds >( end - start ) ;
+12
+13 return duration . count () / 1000.0;
+14 }
