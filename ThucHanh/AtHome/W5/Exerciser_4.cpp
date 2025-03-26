@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cstring>
 using namespace std;
 
@@ -43,7 +44,8 @@ void  heapSort(Student *arr, int n)
 void printListStudent(Student *arr, int n)
 {
 	for (int i = 0; i < n; i++){
-		cout << arr[i].ID << " " << arr[i]. GPA << " " << arr[i].age << endl;
+		cout << arr[i].ID << " " <<<< fixed << setprecision(1) << arr[i].GPA  << " " << arr[i].age << endl;
+		
 	}
 }
 

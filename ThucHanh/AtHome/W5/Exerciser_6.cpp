@@ -18,17 +18,31 @@ void insertionSort(Job *arr, int n)
 		arr[j+1] = key;
 	}
 }
-int main(){
-	Job arr[5] = {{"JobA", 3},
-		{"JobB", 1},
-		{"JobC", 4},
-		{"JobD", 2},
-		{"JobE", 5}};
-	insertionSort(arr, 5);
-	for (int i = 0; i < 5; i++)
-	{
-		cout << arr[i].time << endl;
+
+float average(Job *arr, int n) {
+	float sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += arr[i].time;
 	}
-	
+	return (sum / (float
+		)n);
+}
+
+int main(){
+  	int n;
+    cin >> n;
+	Job *arr = new Job[n];
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i].name >> arr[i].time;
+	}
+	insertionSort(arr, n);
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i].name << endl;
+	}
+	cout << average(arr, n) << endl;
+
+    delete[] arr;
+
 	return 0;
 }
