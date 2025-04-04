@@ -63,287 +63,287 @@ int main()
     cout << endl;
     
     //EXPERIMENT 1:
-    for (int i = 1 ; i <= runs; i++) {
-        // makeRandomArray(vec, n, k); //Tạo mảng
-        makeAlreadySortedArray(vec, n, k);
-        //makeReverseSortedArray(vec, n, k);
-        //makeNearlySortedArray(vec, n, k);
-    
-        vector<int>temp(vec); //Tạo mảng bản sao để thực hiện sắp xếp (chắc chắn các mảng sử dụng cho mỗi thuật toán là giống nhau)
-        auto start = chrono::high_resolution_clock::now();
-        selectionSort(temp);
-        auto end = chrono::high_resolution_clock::now();
-        auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.SelectionSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        insertionSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.InsertionSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        binaryInsertionSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.BinaryInsertionSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        bubbleSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.BubbleSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        shakerSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.ShakerSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        shellSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.ShellSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        heapSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.HeapSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        mergeSort(temp, 0, n - 1);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.MergeSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        naturalMergeSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.NaturalMergeSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        quickSort(temp, 0, n - 1);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.QuickSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        sort(temp.begin(), temp.end());
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.FuncSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        radixSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.RadixSort += duration.count();
-    
-        temp = vec; //Tạo lại bản sao cho mảng ban đầu
-        start = chrono::high_resolution_clock::now();
-        countingSort(temp);
-        end = chrono::high_resolution_clock::now();
-        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-        if (!isSorted(temp)) {
-            cout << "Array is not sorted!!!" << endl;
-            return 0;
-        }
-        Time.CountingSort += duration.count();
+//    for (int i = 1 ; i <= runs; i++) {
+//        // makeRandomArray(vec, n, k); //Tạo mảng
+//        makeAlreadySortedArray(vec, n, k);
+//        //makeReverseSortedArray(vec, n, k);
+//        //makeNearlySortedArray(vec, n, k);
+//
+//        vector<int>temp(vec); //Tạo mảng bản sao để thực hiện sắp xếp (chắc chắn các mảng sử dụng cho mỗi thuật toán là giống nhau)
+//        auto start = chrono::high_resolution_clock::now();
+//        selectionSort(temp);
+//        auto end = chrono::high_resolution_clock::now();
+//        auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.SelectionSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        insertionSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.InsertionSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        binaryInsertionSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.BinaryInsertionSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        bubbleSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.BubbleSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        shakerSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.ShakerSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        shellSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.ShellSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        heapSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.HeapSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        mergeSort(temp, 0, n - 1);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.MergeSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        naturalMergeSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.NaturalMergeSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        quickSort(temp, 0, n - 1);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.QuickSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        sort(temp.begin(), temp.end());
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.FuncSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        radixSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.RadixSort += duration.count();
+//
+//        temp = vec; //Tạo lại bản sao cho mảng ban đầu
+//        start = chrono::high_resolution_clock::now();
+//        countingSort(temp);
+//        end = chrono::high_resolution_clock::now();
+//        duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+//        if (!isSorted(temp)) {
+//            cout << "Array is not sorted!!!" << endl;
+//            return 0;
+//        }
+//        Time.CountingSort += duration.count();
+//    }
+//
+//    cout << "RESULTS: " << endl;
+//    //cout << "Already Sorted Array: Size = " << n << endl;
+//    //cout << "Reverse Sorted Array: Size = " << n << endl;
+//    //cout << "Nearly Sorted Array: Size = " << n << endl;
+//    cout << "Random Array: Size = " << n << endl;
+//
+//    cout << "Selection Sort: " << fixed << setprecision(2) << Time.SelectionSort / runs << "ms" << endl;
+//    cout << "Insertion Sort: " << fixed << setprecision(2) << Time.InsertionSort / runs << "ms" << endl;
+//    cout << "Binary Insertion Sort: " << fixed << setprecision(2) << Time.BinaryInsertionSort / runs << "ms" << endl;
+//    cout << "Bubble Sort: " << fixed << setprecision(2) << Time.BubbleSort / runs << "ms" << endl;
+//    cout << "Shaker Sort: " << fixed << setprecision(2) << Time.ShakerSort / runs << "ms" << endl;
+//    cout << "Shell Sort: " << fixed << setprecision(2) << Time.ShellSort / runs << "ms" << endl;
+//    cout << "Heap Sort: " << fixed << setprecision(2) << Time.HeapSort / runs << "ms" << endl;
+//    cout << "Merge Sort: " << fixed << setprecision(2) << Time.MergeSort / runs << "ms" << endl;
+//    cout << "Natural Merge Sort: " << fixed << setprecision(2) << Time.NaturalMergeSort / runs << "ms" << endl;
+//    cout << "Quick Sort: " << fixed << setprecision(2) << Time.QuickSort / runs << "ms" << endl;
+//    cout << "Function std::sort: " << fixed << setprecision(2) << Time.FuncSort / runs << "ms" << endl;
+//    cout << "Radix Sort: " << fixed << setprecision(2) << Time.RadixSort / runs << "ms" << endl;
+//    cout << "Counting Sort: " << fixed << setprecision(2) << Time.CountingSort / runs << "ms" << endl;
+//
+
+//     EXPERIMENT 2:
+      for (int i = 1; i <= runs; i++) {
+          // makeRandomArray(vec, n, k); //Tạo mảng
+          // makeAlreadySortedArray(vec, n, k);
+           makeReverseSortedArray(vec, n, k);
+//          makeNearlySortedArray(vec, n, k);
+
+    vector<int>temp(vec); //Tạo mảng bản sao để thực hiện sắp xếp (chắc chắn các mảng sử dụng cho mỗi thuật toán là giống nhau)
+    auto start = chrono::high_resolution_clock::now();
+    shellSort(temp);
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
     }
-    
+    Time.ShellSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    heapSort(temp);
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.HeapSort += duration.count();
+
+          temp = vec; //Tạo lại bản sao cho mảng ban đầu
+          start = chrono::high_resolution_clock::now();
+          mergeSort(temp, 0, n - 1);
+          end = chrono::high_resolution_clock::now();
+          duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+          if (!isSorted(temp)) {
+              cout << "Array is not sorted!!!" << endl;
+              return 0;
+          }
+          Time.MergeSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    naturalMergeSort(temp);
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.NaturalMergeSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    quickSort(temp, 0, n - 1);
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.QuickSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    sort(temp.begin(), temp.end());
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.FuncSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    radixSort(temp);
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.RadixSort += duration.count();
+
+    temp = vec; //Tạo lại bản sao cho mảng ban đầu
+    start = chrono::high_resolution_clock::now();
+    countingSort(temp);
+    end = chrono::high_resolution_clock::now();
+    duration = chrono::duration_cast<chrono::milliseconds>(end - start);
+    if (!isSorted(temp)) {
+        cout << "Array is not sorted!!!" << endl;
+        return 0;
+    }
+    Time.CountingSort += duration.count();
+    }
+
     cout << "RESULTS: " << endl;
-    //cout << "Already Sorted Array: Size = " << n << endl;
-    //cout << "Reverse Sorted Array: Size = " << n << endl;
-    //cout << "Nearly Sorted Array: Size = " << n << endl;
-    cout << "Random Array: Size = " << n << endl;
-    
-    cout << "Selection Sort: " << fixed << setprecision(2) << Time.SelectionSort / runs << "ms" << endl;
-    cout << "Insertion Sort: " << fixed << setprecision(2) << Time.InsertionSort / runs << "ms" << endl;
-    cout << "Binary Insertion Sort: " << fixed << setprecision(2) << Time.BinaryInsertionSort / runs << "ms" << endl;
-    cout << "Bubble Sort: " << fixed << setprecision(2) << Time.BubbleSort / runs << "ms" << endl;
-    cout << "Shaker Sort: " << fixed << setprecision(2) << Time.ShakerSort / runs << "ms" << endl;
+    // cout << "Already Sorted Array: Size = " << n << endl;
+    // cout << "Reverse Sorted Array: Size = " << n << endl;
+    cout << "Nearly Sorted Array: Size = " << n << endl;
+    // cout << "Random Array: Size = " << n << endl;
+
     cout << "Shell Sort: " << fixed << setprecision(2) << Time.ShellSort / runs << "ms" << endl;
     cout << "Heap Sort: " << fixed << setprecision(2) << Time.HeapSort / runs << "ms" << endl;
-    cout << "Merge Sort: " << fixed << setprecision(2) << Time.MergeSort / runs << "ms" << endl;
+      cout << "Merge Sort: " << fixed << setprecision(2) << Time.MergeSort / runs << "ms" << endl;
     cout << "Natural Merge Sort: " << fixed << setprecision(2) << Time.NaturalMergeSort / runs << "ms" << endl;
     cout << "Quick Sort: " << fixed << setprecision(2) << Time.QuickSort / runs << "ms" << endl;
     cout << "Function std::sort: " << fixed << setprecision(2) << Time.FuncSort / runs << "ms" << endl;
     cout << "Radix Sort: " << fixed << setprecision(2) << Time.RadixSort / runs << "ms" << endl;
     cout << "Counting Sort: " << fixed << setprecision(2) << Time.CountingSort / runs << "ms" << endl;
-    
-
-//     EXPERIMENT 2:
-    //  for (int i = 1; i <= runs; i++) {
-    //      // makeRandomArray(vec, n, k); //Tạo mảng
-    //      // makeAlreadySortedArray(vec, n, k);
-    //      // makeReverseSortedArray(vec, n, k);
-    //      makeNearlySortedArray(vec, n, k);
-
-    //      vector<int>temp(vec); //Tạo mảng bản sao để thực hiện sắp xếp (chắc chắn các mảng sử dụng cho mỗi thuật toán là giống nhau)
-    //      auto start = chrono::high_resolution_clock::now();
-    //      shellSort(temp);
-    //      auto end = chrono::high_resolution_clock::now();
-    //      auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.ShellSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      heapSort(temp);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.HeapSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      mergeSort(temp, 0, n - 1);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.MergeSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      naturalMergeSort(temp);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.NaturalMergeSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      quickSort(temp, 0, n - 1);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.QuickSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      sort(temp.begin(), temp.end());
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.FuncSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      radixSort(temp);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.RadixSort += duration.count();
-
-    //      temp = vec; //Tạo lại bản sao cho mảng ban đầu
-    //      start = chrono::high_resolution_clock::now();
-    //      countingSort(temp);
-    //      end = chrono::high_resolution_clock::now();
-    //      duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //      if (!isSorted(temp)) {
-    //          cout << "Array is not sorted!!!" << endl;
-    //          return 0;
-    //      }
-    //      Time.CountingSort += duration.count();
-    //  }
-
-    //  cout << "RESULTS: " << endl;
-    //  // cout << "Already Sorted Array: Size = " << n << endl;
-    //  // cout << "Reverse Sorted Array: Size = " << n << endl;
-    //  cout << "Nearly Sorted Array: Size = " << n << endl;
-    //  // cout << "Random Array: Size = " << n << endl;
-
-    //  cout << "Shell Sort: " << fixed << setprecision(2) << Time.ShellSort / runs << "ms" << endl;
-    //  cout << "Heap Sort: " << fixed << setprecision(2) << Time.HeapSort / runs << "ms" << endl;
-    //  cout << "Merge Sort: " << fixed << setprecision(2) << Time.MergeSort / runs << "ms" << endl;
-    //  cout << "Natural Merge Sort: " << fixed << setprecision(2) << Time.NaturalMergeSort / runs << "ms" << endl;
-    //  cout << "Quick Sort: " << fixed << setprecision(2) << Time.QuickSort / runs << "ms" << endl;
-    //  cout << "Function std::sort: " << fixed << setprecision(2) << Time.FuncSort / runs << "ms" << endl;
-    //  cout << "Radix Sort: " << fixed << setprecision(2) << Time.RadixSort / runs << "ms" << endl;
-    //  cout << "Counting Sort: " << fixed << setprecision(2) << Time.CountingSort / runs << "ms" << endl;
 
 
     return 0;
