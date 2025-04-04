@@ -24,8 +24,7 @@ float average(Job *arr, int n) {
 	for (int i = 0; i < n; i++) {
 		sum += arr[i].time;
 	}
-	return (sum / (float
-		)n);
+	return (sum / (float)n);
 }
 
 int main(){

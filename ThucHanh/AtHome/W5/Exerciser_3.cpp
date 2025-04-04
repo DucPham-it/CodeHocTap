@@ -30,7 +30,6 @@ void merge(int *arr, int l, int m, int r)
                 arr[i] = arr[i-1];
             }
             arr[l] = key;
-
             l++;
             m++;
             m2++;        

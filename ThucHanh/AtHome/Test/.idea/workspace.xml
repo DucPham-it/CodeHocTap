@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="596a9208-0745-43ad-868b-e57e1faf2e68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DA/thePerfectHash.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../TestAll/testFunc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/CopilotIndices/17.12.53.23981/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/CopilotIndices/17.12.53.23981/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/FileContentIndex/0e5ce065-88f0-4c1c-aa22-f92500f444fc.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/FileContentIndex/22497eed-1b4e-482f-b397-d3170310cfc0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/FileContentIndex/2b2363f7-5fcb-4863-b244-6923977d8bff.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/FileContentIndex/bce1fda3-56c0-4577-9648-25445c316050.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/v17/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ThucHanh/v17/ipch/AutoPCH/ba401533e8de0044/PTR_EXERCISE_2.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/ProjectSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/CopilotIndices/17.12.53.23981/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/CopilotIndices/17.12.53.23981/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/FileContentIndex/5022b1f8-4c9c-436d-b8d6-514d610db6ec.vsidx" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/FileContentIndex/5022b1f8-4c9c-436d-b8d6-514d610db6ec.vsidx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/FileContentIndex/87c1658c-7c45-47c4-a6ff-626f9297f6c6.vsidx" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/FileContentIndex/87c1658c-7c45-47c4-a6ff-626f9297f6c6.vsidx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/ipch/AutoPCH/ea6fdf4ad5da9efc/PTR_EXERCISE_3.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/ipch/AutoPCH/ea6fdf4ad5da9efc/PTR_EXERCISE_3.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/W1/v17/ipch/AutoPCH/ef578ae6fd721572/PTR_EXERCISE_2.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/W1/v17/ipch/AutoPCH/ef578ae6fd721572/PTR_EXERCISE_2.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vscode/c_cpp_properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vscode/c_cpp_properties.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/24120041.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/24120041.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_2/Ptr_Exercise_2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_2/Ptr_Exercise_2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_2/Ptr_Exercise_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_2/Ptr_Exercise_2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_2/Ptr_Exercise_2.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_2/Ptr_Exercise_2.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/Ptr_Exercise_3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/Ptr_Exercise_3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/Ptr_Exercise_3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/Ptr_Exercise_3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/Ptr_Exercise_3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/Ptr_Exercise_3.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/matrix_a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/matrix_a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/matrix_b.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/matrix_b.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/matrix_c.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/matrix_c.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Ptr_Exercise_3/matrix_c_transposed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Ptr_Exercise_3/matrix_c_transposed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Recur_Exercise_3/Recur_Exercise_3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Recur_Exercise_3/Recur_Exercise_3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Recur_Exercise_5/Recur_Exercise_5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Recur_Exercise_5/Recur_Exercise_5.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/SQL_Exercise_1/SQL_Exercise_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/SQL_Exercise_1/SQL_Exercise_1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/SQL_Exercise_2/SQL_Exercise_2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/SQL_Exercise_2/SQL_Exercise_2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/SQL_Exercise_3/SQL_Exercise_3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/SQL_Exercise_3/SQL_Exercise_3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W1/Str_Exercise_1/Str_Exercise_1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W2/Str_Exercise_1/Str_Exercise_1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W4/24120041.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/24120041.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/Exerciser_3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/Exerciser_3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/Exerciser_4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/Exerciser_4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/Exerciser_5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/Exerciser_5.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/Exerciser_6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/Exerciser_6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/Test3" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/Test3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/test1" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/test1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/test2" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/test2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/test5" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/test5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../W5/test6" beforeDir="false" afterPath="$PROJECT_DIR$/../W5/test6" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DucPham-it"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DucPham-it/CodeHocTap.git",
+    "accountId": "2970c030-6471-4c48-9932-c0fb3b049cad"
+  }
+}]]></component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.4" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2v4hnOW00X3lHbAKi4lb03a3qln" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "#1 on DSA",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="596a9208-0745-43ad-868b-e57e1faf2e68" name="Changes" comment="" />
+      <created>1743410420315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743410420315</updated>
+      <workItem from="1743410422392" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
