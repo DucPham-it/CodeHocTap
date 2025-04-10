@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|solutionrelative:Sort\\Ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43EA61A6-7029-4165-9952-3D40A70B1CFF}|Ex1_Search_Linear_Binary\\Ex1_Search_Linear_Binary.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{43EA61A6-7029-4165-9952-3D40A70B1CFF}|Ex1_Search_Linear_Binary\\Ex1_Search_Linear_Binary.vcxproj|solutionrelative:Ex1_Search_Linear_Binary\\Ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ex2.cpp",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Ex2.cpp",
+              "RelativeDocumentMoniker": "Sort\\Ex2.cpp",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Ex2.cpp",
+              "RelativeToolTip": "Sort\\Ex2.cpp",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T16:36:32.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ex1.cpp",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp",
+              "RelativeDocumentMoniker": "Ex1_Search_Linear_Binary\\Ex1.cpp",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp",
+              "RelativeToolTip": "Ex1_Search_Linear_Binary\\Ex1.cpp",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAkwH8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-09T10:07:16.388Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

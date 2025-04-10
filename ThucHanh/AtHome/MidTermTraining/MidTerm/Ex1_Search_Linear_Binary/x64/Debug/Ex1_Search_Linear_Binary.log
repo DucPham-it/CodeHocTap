@@ -1,0 +1,8 @@
+﻿  Ex1.cpp
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(103,14): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(105,16): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(105,44): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(106,14): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(132,10): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\Ex1_Search_Linear_Binary\Ex1.cpp(139,15): warning C4244: '+=': conversion from 'double' to '__int64', possible loss of data
+  Ex1_Search_Linear_Binary.vcxproj -> D:\DSA\DSA_HCMUS\ThucHanh\AtHome\MidTermTraining\MidTerm\x64\Debug\Search.exe

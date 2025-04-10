@@ -42,7 +42,6 @@ int main() {
 int partition(int arr[], int low, int high, PivotStrategy strategy) {
     int pivotIndex;
 
-    // Xác định pivot nhưng không đổi chỗ
     if (strategy == FIRST_ELEMENT) {
         pivotIndex = low;
     } 

@@ -48,7 +48,15 @@ bool lookUpPerfectTable(int x, vector<vector<list<int>>>& T, vector<int>& c, int
 }
 
 int main() {
-    vector<int> arr = {10, 22, 37, 40, 52, 60, 75, 85};
+    int n;
+    cout << "Input num : ";
+    cin >> n;
+    vector<int> arr(n);
+    cout << "Input array : ";
+    for (int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+
     int m = 10;  
 
     vector<vector<list<int>>> T; 
@@ -56,8 +64,8 @@ int main() {
 
     putToPerfectTable(arr, T, c, m);
 
-    cout << "FIND 37: " << (lookUpPerfectTable(37, T, c, m) ? "YES" : "NO") << endl;
-    cout << "FIND 100: " << (lookUpPerfectTable(100, T, c, m) ? "YES" : "NO") << endl;
+    cout << "FIND 37: " << (lookUpPerfectTable(3, T, c, m) ? "YES" : "NO") << endl;
+    cout << "FIND 100: " << (lookUpPerfectTable(10, T, c, m) ? "YES" : "NO") << endl;
     cout << "FIND 60: " << (lookUpPerfectTable(60, T, c, m) ? "YES" : "NO") << endl; 
 
     for (int i = 0; i < m; i++) {
@@ -69,6 +77,5 @@ int main() {
         }
         cout << endl;
     }
-
     return 0;
 }
