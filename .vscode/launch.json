@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA/DSA_HCMUS/ThucHanh/DA",
-      "program": "d:/DSA/DSA_HCMUS/ThucHanh/DA/build/Debug/outDebug",
+      "cwd": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W8",
+      "program": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W8/test2.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
@@ -18,8 +18,7 @@
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ],
-      "preLaunchTask": "build"
+      ]
     }
   ]
 }

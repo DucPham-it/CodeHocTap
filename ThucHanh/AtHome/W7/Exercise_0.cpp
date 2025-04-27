@@ -40,6 +40,7 @@ void findNumber(vector<int> &arr, int a, int b, int c){
   }
   if (!found) cout << "-1" << endl;
 }
+
 int main(int argc, char const *argv[]){
   int n;
   cin >> n;

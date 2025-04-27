@@ -7,8 +7,24 @@
       "RelativeMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|solutionrelative:Sort\\Ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|solutionrelative:Sort\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43EA61A6-7029-4165-9952-3D40A70B1CFF}|Ex1_Search_Linear_Binary\\Ex1_Search_Linear_Binary.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{43EA61A6-7029-4165-9952-3D40A70B1CFF}|Ex1_Search_Linear_Binary\\Ex1_Search_Linear_Binary.vcxproj|solutionrelative:Ex1_Search_Linear_Binary\\Ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557E4AB2-5A9B-4EF5-AF21-C0CE64FECD9C}|Recursion\\Recursion.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Recursion\\Ex3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{557E4AB2-5A9B-4EF5-AF21-C0CE64FECD9C}|Recursion\\Recursion.vcxproj|solutionrelative:Recursion\\Ex3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Sort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|solutionrelative:Sort\\Sort.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\meetingRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{88FD1C3E-F8C9-4D47-9C5D-0B1B0236949A}|Sort\\Sort.vcxproj|solutionrelative:Sort\\meetingRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +34,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\main.cpp",
+              "RelativeDocumentMoniker": "Sort\\main.cpp",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\main.cpp",
+              "RelativeToolTip": "Sort\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T03:45:58.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sort.h",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Sort.h",
+              "RelativeDocumentMoniker": "Sort\\Sort.h",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Sort.h",
+              "RelativeToolTip": "Sort\\Sort.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-13T03:43:23.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "meetingRoom.cpp",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\meetingRoom.cpp",
+              "RelativeDocumentMoniker": "Sort\\meetingRoom.cpp",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\meetingRoom.cpp",
+              "RelativeToolTip": "Sort\\meetingRoom.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T03:21:10.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ex3.cpp",
+              "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Recursion\\Ex3.cpp",
+              "RelativeDocumentMoniker": "Recursion\\Ex3.cpp",
+              "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Recursion\\Ex3.cpp",
+              "RelativeToolTip": "Recursion\\Ex3.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T01:23:07.381Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,22 +98,23 @@
               "RelativeDocumentMoniker": "Sort\\Ex2.cpp",
               "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Sort\\Ex2.cpp",
               "RelativeToolTip": "Sort\\Ex2.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAEYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-09T16:36:32.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ex1.cpp",
               "DocumentMoniker": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp",
               "RelativeDocumentMoniker": "Ex1_Search_Linear_Binary\\Ex1.cpp",
               "ToolTip": "D:\\DSA\\DSA_HCMUS\\ThucHanh\\AtHome\\MidTermTraining\\MidTerm\\Ex1_Search_Linear_Binary\\Ex1.cpp",
               "RelativeToolTip": "Ex1_Search_Linear_Binary\\Ex1.cpp",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAkwH8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwH8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T10:07:16.388Z"
+              "WhenOpened": "2025-04-09T10:07:16.388Z",
+              "EditorCaption": ""
             }
           ]
         }

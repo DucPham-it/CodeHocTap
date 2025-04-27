@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 typedef long long ll;
@@ -90,6 +91,10 @@ matrix matrixFibonacci(matrix a, ll n) {
   }
 }
 
+ll closedFormFibonacci(ll n){
+  return pow((1 + sqrt(5)) / 2.0, n) / sqrt(5) - pow((1 - sqrt(5)) / 2.0, n) / sqrt(5);
+}
+
 int main(int argc, char const *argv[]){
   ll n;
   cout << "Enter a number th: ";
@@ -100,5 +105,6 @@ int main(int argc, char const *argv[]){
   cout << "Memoization Fibonacci: " << memoizationFibonacci(n) << endl;
   cout << "Interative Fibonacci: " << interativeFibonacci(n) << endl;
   cout << "Matrix Fibonacci: " << matrixFibonacci(a,n).a[0][1] << endl;
+  cout << "Close Form Fibonacci : " << closedFormFibonacci(n) << endl;
   return 0;
 }

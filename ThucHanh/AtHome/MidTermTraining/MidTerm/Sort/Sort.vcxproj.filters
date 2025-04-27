@@ -18,5 +18,16 @@
     <ClCompile Include="Ex2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="meetingRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,165 @@
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int key;
+    Node* left;
+    Node* right;
+};
+
+typedef Node* Tree;
+
+Tree convertArrayToBST(int *arr,  int n);
+Node* createNode(int key);
+bool searchNode(Tree root, int key);
+Tree insertNode(Tree& root, int key);
+Tree minValueNode(Tree& node);
+Tree deleteNode(Tree& root, int key);
+void NLR(Tree root);
+void LNR(Tree root);
+void LRN(Tree root);
+void deleteAll(Tree& root);
+
+int main() {
+    int arr[] = {4,6,8,3,2,1,7,9,5,10};
+    int n = 10;
+    Tree root = convertArrayToBST(arr,n);
+    cout << endl;
+    cout <<"NLR : ";
+    NLR(root);
+    deleteNode(root, 4);
+    cout << endl;
+    cout <<"LRN : ";
+    LRN(root);
+    insertNode(root, 24);
+    cout << endl;
+    cout <<"LNR : ";
+    LNR(root);
+
+    deleteAll(root);
+    return 0;
+}
+
+
+Tree convertArrayToBST(int *arr,  int n){
+    int i = 0;
+    Node* root = nullptr;
+    for (int i = 0; i < n; i++){
+        insertNode(root, arr[i]);
+    }
+    return root;
+}
+
+Node* createNode(int key){
+    Node* p = new Node;
+    p->key = key;
+    p->left = nullptr;
+    p->right = nullptr;
+    return p;
+}
+
+
+bool search(Tree root, int key) {
+    if (root == nullptr){
+        return false;
+    }
+    if (root->key == key)
+        return true;
+    if (key < root->key)
+        return search(root->left, key);
+    else
+        return search(root->right, key);
+}
+
+Tree insertNode(Tree& root, int key) {
+    if (root == nullptr) {
+        Node* p = createNode(key);
+        root = p;
+        return root;
+    }
+    if (key < root->key)
+        return insertNode(root->left, key);
+    else if (key > root->key)   
+        return insertNode(root->right, key);
+    else
+        return root;
+}
+
+Tree minValueNode(Tree& node){
+    if (node == nullptr)
+        return node;
+    if (node->left != nullptr)
+        return minValueNode(node->left);
+    return node;
+}
+
+Tree deleteNode(Tree& root, int key){
+    if (root ==  nullptr)
+        return root;
+    if (key < root->key)
+        root->left = deleteNode(root->left, key);
+    else if (key > root->key)
+        root->right = deleteNode(root->right, key);
+    else{
+        if (root->left == nullptr){
+            Node* temp = root->right;
+            delete root;
+            return temp;
+        }
+        else if (root->right == nullptr){
+            Node* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        Node* temp = minValueNode(root->right);
+        root->key = temp->key;
+        root->right = deleteNode(root->right, temp->key);
+    }
+    return root;
+}   
+
+void NLR(Tree root){
+    if (root == nullptr) {
+        return;
+    }
+    cout << root->key << " ";
+    NLR(root->left);
+    NLR(root->right);
+}
+
+void LNR(Tree root) {
+    if (root == nullptr) {
+        return;
+    }
+    LNR(root->left);
+    cout << root->key << " ";
+    LNR(root->right);
+}
+
+void LRN(Tree root){
+    if (root == nullptr){
+        return;
+    }
+    LRN(root->left);
+    LRN(root->right);
+    cout << root->key << " ";
+}
+
+void deleteAll(Tree& root){
+   if (root == nullptr){
+        return;
+   }
+
+    deleteAll(root->left);
+    deleteAll(root->right);
+    
+    delete root;
+    root = nullptr;    
+}
+
+
+
+
+
+

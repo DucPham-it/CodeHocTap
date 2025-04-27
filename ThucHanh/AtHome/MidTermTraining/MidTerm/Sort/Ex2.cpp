@@ -1,30 +1,10 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+#include "Sort.h"
 
-void interChangeSort(int* arr, int n);
-void insertionSort(int* arr, int n);
-void selectionSort(int* arr, int n);
-void bubbleSort(int* arr, int n);
-void quickSort(int* arr, int left, int right);
-void merge(int* arr, int left, int right);
-void mergeSort(int* arr, int left, int right);
-void heapify(int* arr, int n);
-void heapSort(int *arr, int n);
-void shellSort(int* arr, int left, int right);
-void countingSort(int* arr, int n);
-void radixSort(int* arr, int n);
-
-int main() {
-	int n = 10;
-	int arr[] = { 5 ,7, 3, 2, 6 , 1, 9 ,8, 4, 10 };
-	quickSort(arr, 0, n - 1);
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << ' ';
-	}
-	cout << endl;
-	return 0;
+bool ascendingOrder(int a, int b) {
+	return a < b;
+}
+bool descendingOrder(int a, int b) {
+	return a > b;
 }
 
 void interChangeSort(int* arr, int n) {
@@ -88,6 +68,75 @@ void quickSort(int* arr, int left, int right) {
 		}
 	} while (i < j);
 
-	if (j > left) quickSort(arr, left, j);
+    if (j > left) quickSort(arr, left, j);
 	if (i < right) quickSort(arr, i, right);
+}
+
+void merge(int* arr, int left, int mid, int right) {
+	int n1 = mid - left + 1;
+	int n2 = right - mid;
+	int* L = new int[n1];
+	int* R = new int[n2];
+	int k = left;
+	int i = 0, j = 0;
+	while (i < n1)
+	{
+		L[i++] = arr[k++];
+	}
+	while (j < n2)
+	{
+		R[j++] = arr[k++];
+	}
+
+	i = 0, j = 0;
+	k = left;
+
+	while (i < n1 && j < n2)
+	{
+		if (L[i] < R[j])
+			arr[k++] = L[i++];
+		else
+			arr[k++] = R[j++];
+	}
+	while (i < n1) {
+		arr[k++] = L[i++];
+	}
+	while (j < n2) {
+		arr[k++] = R[j++];
+	}
+	delete[] L;
+	delete[] R;
+}
+
+void mergeSort(int* arr, int left, int right) {	
+	if (left < right) {
+		int mid = (left + right) / 2;
+		mergeSort(arr, left, mid);
+		mergeSort(arr, mid + 1, right);
+		merge(arr, left, mid, right);
+	}
+}
+
+void heapify(int* arr, int n, int i, bool (*comparator) (int, int)) {
+	int largest = i;
+	int left = 2 * i + 1;
+	int right = 2 * i + 2;
+	if (left < n && !comparator(arr[left], arr[largest]))
+		largest = left;
+	if (right < n && !comparator(arr[right], arr[largest]))
+		largest = right;
+	if (largest != i) {
+		swap(arr[i], arr[largest]);
+		heapify(arr, n, largest, comparator);
+	}
+}
+
+void heapSort(int* arr, int n, bool (*comparator) (int, int)) {
+	for (int i = n / 2 - 1; i >= 0; i--) {
+		heapify(arr, n, i, comparator);
+	}
+	for (int i = n - 1; i >= 0; i--) {
+		swap(arr[0], arr[i]);
+		heapify(arr, i, 0, comparator);
+	}
 }
