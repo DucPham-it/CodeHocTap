@@ -112,10 +112,9 @@ int main(){
     bst . insert (60) ;
     bst . insert (80) ;
     bst . insert (55) ;
-    bst . insert (52) ;
     
     cout << bst.height() << endl;
-    cout << bst.depth(52) << endl;
+    cout << bst.depth(50) << endl;
     return 0;
 }
 
