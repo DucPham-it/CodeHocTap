@@ -115,6 +115,7 @@
     "text_encoding": "cpp",
     "typeinfo": "cpp",
     "variant": "cpp",
-    "precodeforbstcpp": "cpp"
+    "precodeforbstcpp": "cpp",
+    "unordered_set": "cpp"
   }
 }

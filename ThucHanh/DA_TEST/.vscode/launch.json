@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W10",
-      "program": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W10/build/Debug/outDebug",
+      "cwd": "d:/DSA/DSA_HCMUS/ThucHanh/DA_TEST",
+      "program": "d:/DSA/DSA_HCMUS/ThucHanh/DA_TEST/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

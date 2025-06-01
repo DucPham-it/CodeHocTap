@@ -32,7 +32,6 @@ void putToPerfectTable(vector<int>& arr, vector<vector<list<int>>>& T, vector<in
         int k = g(arr[i], size) % size;
         T[j][k].push_back(arr[i]); 
     }
-
 }
 
 bool lookUpPerfectTable(int x, vector<vector<list<int>>>& T, vector<int>& c, int m) {
