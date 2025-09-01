@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/ducpham/myCodeStudy/CodeHocTap/BaiTest",
-      "program": "/home/ducpham/myCodeStudy/CodeHocTap/BaiTest/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W10",
+      "program": "d:/DSA/DSA_HCMUS/ThucHanh/AtHome/W10/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
