@@ -1,0 +1,7 @@
+PROJECT_NAME    = "Check Valid Date"
+EXTRACT_ALL 		= YES
+GENERATE_LATEX = NO
+INPUT           = "./" 
+INPUT			+= "../lib"
+RECURSIVE       = YES
+HTML_OUTPUT     = docs
