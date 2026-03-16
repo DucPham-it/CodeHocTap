@@ -1,82 +1,77 @@
-#include <iostream>
 #include <format>
+#include <iostream>
 using namespace std;
 
-void inputArray(int* &arr, int n){
-  arr = new int[n]; 
-  cout << "Enter Elenments: \n";
+void inputArray(int *&arr, int n) {
+    arr = new int[n];
+    cout << "Enter Elenments: \n";
 
-  for (int i = 0; i < n; i++){
-    cout << format("arr[{}] = ", i);
-    cin >> arr[i];
-  }
+    for (int i = 0; i < n; i++) {
+        cout << format("arr[{}] = ", i);
+        cin >> arr[i];
+    }
 }
 
-void printArray(int *arr, int n){
-  for (int i = 0; i < n;i++) {
+void printArray(int *arr, int n) for (int i = 0; i < n; i++) {
     cout << format("arr[{}] = {} \n", i, arr[i]);
-  }
 }
 
-int findMax(int *arr, int n){
-  int max = arr[0];
+int findMax(int *arr, int n) {
+    int max = arr[0];
 
-  for (int i = 1; i < n; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
     }
-  }
-  return max;
+    return max;
 }
 
-int sumArray(int *arr, int n){
-  int sum = 0;
+int sumArray(int *arr, int n) {
+    int sum = 0;
 
-  for (int i = 0; i < n; i++) {
-    sum += arr[i];
-  }
-  return sum;
-}
-
-void concatArrays (int * a , int na , int * b , int nb , int * & res , int & nres ) {
-  nres = na + nb ;
-  res = new int [ nres ] ;
-
-  for ( int i = 0 ; i < na ; i++ ) {
-    res [ i ] = a [ i ] ;
-  }
-  for ( int j = 0 ; j < nb ; j++ ) {
-    res [ na + j ] = b [ j ] ;
-  } 
-}
-
-void findLongestAscendingSubarray (int * arr , int n , int * & res , int & nres )
-{
-  int maxLenght = 1;
-  int startIndex = 0;
-  int currentLength = 1;
-  int currentIndex = 0;
-
-  for (int i = 0; i < n-1; i++) {
-    if ( arr[i] < arr[i+1]) {
-      currentLength++;
-      if (currentLength > maxLenght) {
-        maxLenght = currentLength;
-        startIndex = currentIndex;
-      }
+    for (int i = 0; i < n; i++) {
+        sum += arr[i];
     }
-    else {
-      currentLength = 1;
-      currentIndex = i+1;
+    return sum;
+}
+
+void concatArrays(int *a, int na, int *b, int nb, int *&res, int &nres) {
+    nres = na + nb;
+    res = new int[nres];
+
+    for (int i = 0; i < na; i++) {
+        res[i] = a[i];
     }
-  }
+    for (int j = 0; j < nb; j++) {
+        res[na + j] = b[j];
+    }
+}
 
-  nres = maxLenght;
-  res = new int[nres];
-  for (int i = 0; i < nres; i++) {
-    res[i] = arr[startIndex+i];
-  }
+void findLongestAscendingSubarray(int *arr, int n, int *&res, int &nres) {
+    int maxLenght = 1;
+    int startIndex = 0;
+    int currentLength = 1;
+    int currentIndex = 0;
 
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] < arr[i + 1]) {
+            currentLength++;
+            if (currentLength > maxLenght) {
+                maxLenght = currentLength;
+                startIndex = currentIndex;
+            }
+        } else {
+            currentLength = 1;
+            currentIndex = i + 1;
+        }
+    }
+
+    nres = maxLenght;
+    res = new int[nres];
+    for (int i = 0; i < nres; i++) {
+        res[i] = arr[startIndex + i];
+    }
 }
 
 int main() {
@@ -119,4 +114,5 @@ int main() {
     delete[] c;
     delete[] asc;
 
-    return 0;}
+    return 0;
+}
